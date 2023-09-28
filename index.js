@@ -21,12 +21,16 @@ if (number % 2 === 0) {
 }
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 100;
+const numberOfHotdogs = 1000000000;
 
-if (numberOfHotdogs <= 5) {
+if (numberOfHotdogs < 5) {
   console.log("2 euro per hot dog");
-} else if (numberOfHotdogs > 5 < 100) {
+} else if (numberOfHotdogs > 5 && numberOfHotdogs < 100) {
   console.log("1.50 euro per hot dog");
+} else if (numberOfHotdogs > 100 && numberOfHotdogs < 1000000) {
+  console.log("1 euro per hotdog");
+} else if (numberOfHotdogs > 1000000) {
+  console.log("0.10 cent per hotdog");
 }
 
 // Part 4: Daytime
